@@ -5,13 +5,6 @@ section.reviews
         h2.reviews__title.section__title Отзывы
         ul.reviews__list
             each review in reviews
-                li.reviews__item
-                    .reviews__wrapper
-                        .reviews__info
-                            .reviews__box-images
-                                img.reviews__img(src=`${review.photo}` alt='Фото автора отзыва' width='80' height='80')
-                            .reviews__box
-                                h3.reviews__name= review.name
-                                p.reviews__count= `${review.gender === 'male' ? 'Купил' : 'Купила'} ${review.booksCount} книг`
-                        p.reviews__review= review.review
+                include one-review
+
 
