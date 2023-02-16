@@ -1,7 +1,7 @@
 header.header
     .container
         .header__wrapper
-            a.header__logo-link
+            a.header__logo-link(href=pageClass === "index-page" ? false : "index.html")
                 span.visually-hidden Логотип сайта "По полочкам"
                 .
                     <svg class="header__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg">
